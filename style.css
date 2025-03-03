@@ -1,0 +1,267 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: url('images/header-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.main-heading {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.subheading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.search-group {
+    width: 50%;
+    margin: auto;
+}
+
+.search-input {
+    padding: 12px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.search-btn {
+    background: #ff5733;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* Featured Destinations */
+.features {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.features-box {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.features-box:hover {
+    transform: scale(1.05);
+}
+
+.features-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff5733;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.rating i {
+    color: gold;
+}
+
+.features-details {
+    padding: 15px;
+}
+
+/* Travel Gallery */
+.gallery {
+    background: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.gallery-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.gallery-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.gallery-box:hover img {
+    transform: scale(1.1);
+}
+
+/* Banner Section */
+.banner-section {
+    background: url('images/banner2.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+.banner-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.banner-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: #ff5733;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #e64a19;
+}
+
+/* User Reviews */
+.user-feedback {
+    background: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.user-review {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+.user-review:hover {
+    transform: translateY(-5px);
+}
+
+.user-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #ff5733;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-group {
+        width: 80%;
+    }
+    .search-input {
+        width: 70%;
+    }
+    .search-btn {
+        width: 30%;
+    }
+    .features-box {
+        margin-bottom: 20px;
+    }
+    .banner-section h2 {
+        font-size: 2rem;
+    }
+    .banner-section p {
+        font-size: 1rem;
+    }
+}
+/* Footer Section */
+.footer {
+    background-image: linear-gradient(#9610fb, #9610fb);
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer h5 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer i {
+    font-size: 20px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer i:hover {
+    color: #ffcc00;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
